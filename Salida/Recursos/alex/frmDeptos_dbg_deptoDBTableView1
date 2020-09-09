@@ -1,0 +1,56 @@
+﻿[Main]
+Version=2
+
+[frmDeptos.dbg_deptoDBTableView1: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmDeptos.dbg_deptoDBTableView1/Col_Grid__idepto: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=97
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmDeptos.dbg_deptoDBTableView1/Col_Grid__descripcion: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=359
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmDeptos.dbg_deptoDBTableView1/dbg_deptoDBTableView1Column1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=243
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmDeptos.dbg_deptoDBTableView1/Col_Grid__jefatura: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=150
+AlignmentHorz=0
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

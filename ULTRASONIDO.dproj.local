@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/01/25 18:05:17.000.829,C:\Users\DevDSAI\Documents\ULTRASONIDO\Noil_SSI_18.dproj=C:\Users\DevDSAI\Documents\ULTRASONIDO\ULTRASONIDO.dproj</Transaction>
+    <Transaction>2020/01/27 10:46:17.000.928,=C:\Users\DevDSAI\Documents\ULTRASONIDO\frm_Consulta.pas</Transaction>
+    <Transaction>2020/01/27 10:56:49.000.352,=C:\Users\DevDSAI\Documents\ULTRASONIDO\frm_Especialidad.pas</Transaction>
+    <Transaction>2020/01/27 10:56:50.000.954,=C:\Users\DevDSAI\Documents\ULTRASONIDO\frm_Pacientes.pas</Transaction>
+    <Transaction>2020/01/27 10:56:50.000.234,=C:\Users\DevDSAI\Documents\ULTRASONIDO\frm_Medicos.pas</Transaction>
+    <Transaction>2020/01/27 10:56:51.000.675,=C:\Users\DevDSAI\Documents\ULTRASONIDO\frm_Plantilla.pas</Transaction>
+    <Transaction>2020/01/27 10:56:52.000.180,=C:\Users\DevDSAI\Documents\ULTRASONIDO\frm_TipoEstudio.pas</Transaction>
+  </Transactions>
+</BorlandProject>

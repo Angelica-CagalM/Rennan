@@ -1,0 +1,166 @@
+﻿[Main]
+Version=2
+
+[frmMateriales_SS7.cxView_Materiales: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn3: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=84
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumnTR: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=64
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn4: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=4
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn8: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=5
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn5: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=6
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn6: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=7
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn13: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=8
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn7: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=9
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn9: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=10
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn11: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=27
+AlignmentHorz=0
+Index=11
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn10: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=20
+AlignmentHorz=0
+Index=12
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxView_Materiales/cxView_MaterialesColumn12: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=64
+AlignmentHorz=0
+Index=13
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

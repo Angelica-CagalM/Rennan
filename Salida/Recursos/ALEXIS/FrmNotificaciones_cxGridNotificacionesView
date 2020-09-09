@@ -1,0 +1,100 @@
+﻿[Main]
+Version=2
+
+[FrmNotificaciones.cxGridNotificacionesView: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=138
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn8: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=103
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=70
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn3: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=140
+AlignmentHorz=0
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn4: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=125
+AlignmentHorz=0
+Index=4
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn5: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=132
+AlignmentHorz=0
+Index=5
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn6: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=130
+AlignmentHorz=1
+Index=6
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[FrmNotificaciones.cxGridNotificacionesView/cxGridNotificacionesViewColumn7: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=82
+AlignmentHorz=0
+Index=7
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

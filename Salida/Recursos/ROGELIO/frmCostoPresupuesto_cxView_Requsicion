@@ -1,0 +1,144 @@
+﻿[Main]
+Version=2
+
+[frmCostoPresupuesto.cxView_Requsicion: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn7: TcxGridDBColumn]
+=
+GroupIndex=0
+Width=61
+AlignmentHorz=0
+Index=0
+Visible="False"
+SortOrder="soAscending"
+SortIndex=0
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn3: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn10: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn4: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=4
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn8: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=5
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn5: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=6
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn9: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=7
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn11: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=8
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn6: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=9
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn12: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=74
+AlignmentHorz=1
+Index=10
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Requsicion/cxView_RequsicionColumn13: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=64
+AlignmentHorz=0
+Index=11
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

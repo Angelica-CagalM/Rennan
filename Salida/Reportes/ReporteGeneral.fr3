@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="3577" PreviewOptions.MDIChild="True" PreviewOptions.Modal="False" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43159.7775924421" ReportOptions.Description.Text="" ReportOptions.LastChange="43725.9858058681" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." OnReportPrint="no ">
+  <Datasets>
+    <item DataSet="connection.rpt_setup" DataSetName="setup"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="185.75603" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxPictureView Name="Picture1" Left="0" Top="3.77953" Width="166.2992126" Height="75.59055118" Center="True" DataField="bImagen" DataSet="connection.rpt_contrato" DataSetName="contrato" Frame.Style="fsDouble" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="Memo2" Left="171.71676" Top="3.77953" Width="566.9295" Height="45.35436" Font.Charset="1" Font.Color="6160640" Font.Height="-19" Font.Name="Arial" Font.Style="0" Frame.Style="fsDouble" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[setup.&#34;sNombre&#34;]"/>
+      <TfrxMemoView Name="rTitulo" Align="baWidth" Left="0" Top="139.28355" Width="740.409927" Height="30.23624" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="5131854" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Nombre del reporte"/>
+      <TfrxLineView Name="lineaInferior" Align="baWidth" Left="0" Top="183.19697" Width="740.409927" Height="0" Color="0" Frame.Color="4194304" Frame.Typ="4" Frame.Width="2"/>
+      <TfrxMemoView Name="Memo19" Left="173.41744" Top="54.25201" Width="566.92910945" Height="40.14461021" DataField="sDireccion1" DataSet="connection.rpt_setup" DataSetName="setup" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[setup.&#34;sDireccion1&#34;]"/>
+      <TfrxMemoView Name="Memo45" Left="173.41744" Top="94.20191728" Width="566.92910945" Height="17.46743021" DataField="sCiudad" DataSet="connection.rpt_setup" DataSetName="setup" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[setup.&#34;sCiudad&#34;]"/>
+    </TfrxReportTitle>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="264.5671" Width="740.409927">
+      <TfrxMemoView Name="Memo1" Align="baRight" Left="645.921677" Top="1.22047" Width="94.48825" Height="18.89765" Font.Charset="1" Font.Color="8421504" Font.Height="-12" Font.Name="Arial" Font.Style="3" HAlign="haRight" ParentFont="False" Text="Hoja [Page#] de [TotalPages#]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo3" Align="baLeft" Left="0" Top="1.22047" Width="638.74057" Height="18.89765" Font.Charset="1" Font.Color="8421504" Font.Height="-9" Font.Name="Arial" Font.Style="3" ParentFont="False" VAlign="vaCenter" Text="* Software Noíl"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

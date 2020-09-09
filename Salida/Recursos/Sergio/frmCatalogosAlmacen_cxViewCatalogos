@@ -1,0 +1,78 @@
+﻿[Main]
+Version=2
+
+[frmCatalogosAlmacen.cxViewCatalogos: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmCatalogosAlmacen.cxViewCatalogos/cxViewCatalogosColumn1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=136
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCatalogosAlmacen.cxViewCatalogos/cxViewCatalogosColumn2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=175
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCatalogosAlmacen.cxViewCatalogos/cxViewCatalogosColumn3: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=184
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCatalogosAlmacen.cxViewCatalogos/cxViewCatalogosColumn4: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=207
+AlignmentHorz=0
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCatalogosAlmacen.cxViewCatalogos/cxViewCatalogosColumn5: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=75
+AlignmentHorz=0
+Index=4
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCatalogosAlmacen.cxViewCatalogos/cxViewCatalogosColumn6: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=66
+AlignmentHorz=0
+Index=5
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

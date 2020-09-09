@@ -1,0 +1,177 @@
+﻿[Main]
+Version=2
+
+[frmCostoPresupuesto.cxView_Costos: TcxGridDBTableView]
+=
+Footer="True"
+GroupByBox="True"
+GroupFooters=2
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=94
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn3: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=307
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn4: TcxGridDBColumn]
+=
+GroupIndex=0
+Width=114
+AlignmentHorz=0
+Index=2
+Visible="False"
+SortOrder="soDescending"
+SortIndex=0
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn5: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=120
+AlignmentHorz=0
+Index=3
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn6: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=63
+AlignmentHorz=0
+Index=4
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn7: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=75
+AlignmentHorz=1
+Index=5
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn15: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=74
+AlignmentHorz=1
+Index=6
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn9: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=71
+AlignmentHorz=1
+Index=7
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn11: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=87
+AlignmentHorz=1
+Index=8
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=68
+AlignmentHorz=1
+Index=9
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn8: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=102
+AlignmentHorz=1
+Index=10
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn12: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=74
+AlignmentHorz=1
+Index=11
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn13: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=74
+AlignmentHorz=1
+Index=12
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn14: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=74
+AlignmentHorz=1
+Index=13
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxView_Costos/cxView_CostosColumn10: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=116
+AlignmentHorz=1
+Index=14
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

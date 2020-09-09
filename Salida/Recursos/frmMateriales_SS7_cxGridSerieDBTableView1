@@ -1,0 +1,56 @@
+﻿[Main]
+Version=2
+
+[frmMateriales_SS7.cxGridSerieDBTableView1: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmMateriales_SS7.cxGridSerieDBTableView1/colAlmacen: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=101
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridSerieDBTableView1/colNumSerie: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=105
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridSerieDBTableView1/colLote: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=94
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridSerieDBTableView1/colObservacion: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=155
+AlignmentHorz=0
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

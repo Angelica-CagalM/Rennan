@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="3577" PreviewOptions.MDIChild="True" PreviewOptions.Modal="False" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43739.6361427546" ReportOptions.Description.Text="" ReportOptions.LastChange="43739.6533587963" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." OnReportPrint="no ">
+  <Datasets>
+    <item DataSet="frxOCVencidas" DataSetName="dsOCVencidas"/>
+    <item DataSet="connection.rpt_setup" DataSetName="setup"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="142.79527559" Left="0" Top="18.89765" Width="718.1107">
+      <TfrxRichView Name="Rich1" Align="baWidth" Left="0" Top="99" Width="718.1107" Height="37.79527559" GapX="2" GapY="1" PropData="0852696368456469740A1E0100007B5C727466315C616E73695C616E7369637067313235325C64656666305C6E6F7569636F6D7061745C6465666C616E6732323533387B5C666F6E7474626C7B5C66305C666E696C5C66636861727365743020417269616C3B7D7B5C66315C666E696C5C666368617273657430205461686F6D613B7D7D0D0A7B5C2A5C67656E657261746F722052696368656432302031302E302E31383336327D5C766965776B696E64345C756331200D0A5C706172645C71635C625C667332345C6C616E6731303333204F5244454E455320444520434F4D5052412056454E43494441535C7061720D0A5C66733138202853494E204150524F424143494F4E204445205041474F295C66315C667332345C6C616E6732323533385C7061720D0A7D0D0A00"/>
+      <TfrxPictureView Name="Picture1" Left="0" Top="0" Width="160.48825" Height="83.1496063" DataField="bImagen" DataSet="connection.rpt_setup" DataSetName="setup" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18.8976377952756" Left="0" Top="268.34663" Width="718.1107" ColumnWidth="0" ColumnGap="0" DataSet="frxOCVencidas" DataSetName="dsOCVencidas" RowCount="0">
+      <TfrxMemoView Name="Memo5" Left="37.7952755905512" Top="0" Width="170.07874016" Height="18.8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[dsOCVencidas.&#34;Codigo&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="207.874015748031" Top="0" Width="170.07874016" Height="18.8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[dsOCVencidas.&#34;sNumFolio&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="377.952755905512" Top="0" Width="170.07874016" Height="18.8976378" DisplayFormat.FormatStr="mm-dd-yyyy" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[dsOCVencidas.&#34;dFechaVigencia&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="347.71676" Width="718.1107">
+      <TfrxMemoView Name="Memo1" Left="642.5201" Top="0" Width="75.5906" Height="18.89765" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="185.19697" Width="718.1107">
+      <TfrxMemoView Name="Memo2" Left="37.79527559" Top="0" Width="170.07874016" Height="22.6771653543307" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="13403923" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Folio Orden de Compra"/>
+      <TfrxMemoView Name="Memo3" Left="207.87401575" Top="0" Width="170.07874016" Height="22.6771653543307" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="13403923" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Folio Requisición"/>
+      <TfrxMemoView Name="Memo4" Left="377.952755905512" Top="0" Width="170.07874015748" Height="22.6771653543307" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="13403923" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Fecha de Vencimiento"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>

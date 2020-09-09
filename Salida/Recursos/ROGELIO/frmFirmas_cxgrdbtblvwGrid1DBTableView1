@@ -1,0 +1,155 @@
+﻿[Main]
+Version=2
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="False"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxdIdFecha: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=69
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxsIdTurno: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=38
+AlignmentHorz=0
+Index=1
+Visible="False"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxFirmante1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=63
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxFirmante2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=64
+AlignmentHorz=0
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxFirmante3: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=73
+AlignmentHorz=0
+Index=4
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxFirmante4: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=77
+AlignmentHorz=0
+Index=5
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxFirmante5: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=65
+AlignmentHorz=0
+Index=6
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxFirmante10: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=62
+AlignmentHorz=0
+Index=7
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/tcxFirmante30: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=59
+AlignmentHorz=0
+Index=8
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/cxgrdbtblvwGrid1DBTableView1Column1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=43
+AlignmentHorz=0
+Index=9
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/cxgrdbtblvwGrid1DBTableView1Column2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=43
+AlignmentHorz=0
+Index=10
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/cxgrdbtblvwGrid1DBTableView1Column4: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=43
+AlignmentHorz=0
+Index=11
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmFirmas.cxgrdbtblvwGrid1DBTableView1/cxgrdbtblvwGrid1DBTableView1Column5: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=43
+AlignmentHorz=0
+Index=12
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

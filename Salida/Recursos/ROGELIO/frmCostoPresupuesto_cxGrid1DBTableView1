@@ -1,0 +1,56 @@
+﻿[Main]
+Version=2
+
+[frmCostoPresupuesto.cxGrid1DBTableView1: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="False"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmCostoPresupuesto.cxGrid1DBTableView1/cxColumnRub1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=93
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxGrid1DBTableView1/cxColumRubR: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=74
+AlignmentHorz=1
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxGrid1DBTableView1/cxColumnRub2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=99
+AlignmentHorz=1
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmCostoPresupuesto.cxGrid1DBTableView1/cxColumnRub3: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=116
+AlignmentHorz=1
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

@@ -1,0 +1,1208 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0db2b67f-3640-49c0-84d0-acc791de6a50}</ProjectGuid>
+        <MainSource>Noil_SSI_18.dpr</MainSource>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+        <DCC_DependencyCheckOutputName>Salida\noil.exe</DCC_DependencyCheckOutputName>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>18.1</ProjectVersion>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>1025</TargetedPlatforms>
+        <AppType>Application</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice64' and '$(Cfg_2)'=='true') or '$(Cfg_2_iOSDevice64)'!=''">
+        <Cfg_2_iOSDevice64>true</Cfg_2_iOSDevice64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <VerInfo_Locale>2058</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=DSAI S.A DE C.V.;FileDescription=SISTEMA DE ADMINISTRACION DE PROYECTOS;FileVersion=2017.10.10.17;InternalName=DSAI;LegalCopyright=;LegalTrademarks=;OriginalFilename=Noil Empresarial;ProductName=Noíl;ProductVersion=1.1;Comments=Actualiacion de Nominas, Contabilidad y RH</VerInfo_Keys>
+        <VerInfo_MajorVer>2017</VerInfo_MajorVer>
+        <VerInfo_MinorVer>10</VerInfo_MinorVer>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Data.Win;Winapi;WinAPI.Networking;VCLTee;System.Win;$(DCC_Namespace)</DCC_Namespace>
+        <SanitizedProjectName>Noil_SSI_18</SanitizedProjectName>
+        <VerInfo_Release>10</VerInfo_Release>
+        <VerInfo_Build>17</VerInfo_Build>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <DCC_UsePackage>vcl;rtl;vclx;vclactnband;dbrtl;vcldb;vcldbx;bdertl;dsnap;dbxcds;DbxCommonDriver;dbexpress;dsnapcon;teeUI;teedb;tee;adortl;vclib;ibxpress;IndyCore;IndySystem;IndyProtocols;xmlrtl;inet;IntrawebDB_90_100;Intraweb_90_100;VclSmp;vclie;websnap;webdsnap;inetdbbde;inetdbxpress;soaprtl;dclOfficeXP;ZComponent;ZDbc;ZPlain;ZCore;ZParseSql;fs11;frx11;frxcs11;fsDB11;frxDB11;fsBDE11;frxBDE11;fsADO11;frxADO11;fsIBX11;frxIBX11;frxe11;fsTee11;frxTee11;NxCommonDsgn;NxCommonRun;NxGridDsgn;NxGridRun;NxDBGridRun;NxInspectorDsgn;NxInspectorRun;NxCollectionDsgn;NxCollectionRun;NxSheetRun;NxAddonsRun;NxThirdpartyRun;NxDBThirdpartyRun;rxctl;rxdb;rxbde;acntD7_R;office2K;unidacvcl240;unidac240;officeXPrt;$(DCC_UsePackage)</DCC_UsePackage>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <Debugger_DebugSourcePath>C:\componente2007\ZeosDB\ZEOSDBO-6.6.2-rc\src\dbc\;C:\componente2007\ZeosDB\ZEOSDBO-6.6.2-rc\src\component\;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>Noil_Icon3.ico</Icon_MainIcon>
+        <DCC_Namespace>Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_UsePackage>office2K;officeXPrt;$(DCC_UsePackage)</DCC_UsePackage>
+        <Icon_MainIcon>Noil_Icon3.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <Version>7.0</Version>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_MapFile>3</DCC_MapFile>
+        <DCC_ExeOutput>C:\Inteligent COTEMAR ADAL\</DCC_ExeOutput>
+        <DCC_DcuOutput>C:\Inteligent COTEMAR ADAL\</DCC_DcuOutput>
+        <DCC_ObjOutput>C:\Inteligent COTEMAR ADAL\</DCC_ObjOutput>
+        <DCC_HppOutput>C:\Inteligent COTEMAR ADAL\</DCC_HppOutput>
+        <DCC_BplOutput>C:\Inteligent COTEMAR ADAL\</DCC_BplOutput>
+        <DCC_DcpOutput>C:\Inteligent COTEMAR ADAL\</DCC_DcpOutput>
+        <DCC_UnitSearchPath>C:\Inteligent COTEMAR ADAL\dcu;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_ResourcePath>C:\Inteligent COTEMAR ADAL\dcu;$(DCC_ResourcePath)</DCC_ResourcePath>
+        <DCC_ObjPath>C:\Inteligent COTEMAR ADAL\dcu;$(DCC_ObjPath)</DCC_ObjPath>
+        <DCC_IncludePath>C:\Inteligent COTEMAR ADAL\dcu;$(DCC_IncludePath)</DCC_IncludePath>
+        <DCC_Define>EUREKALOG;EUREKALOG_VER6;RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+        <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+        <DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <AppEnableHighDPI>true</AppEnableHighDPI>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <Version>7.0</Version>
+        <DCC_MapFile>3</DCC_MapFile>
+        <DCC_ExeOutput>Salida</DCC_ExeOutput>
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+        <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+        <DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+        <DCC_DcuOutput>E:\NUBE 2018\ERP SIANI\Output\</DCC_DcuOutput>
+        <DCC_ObjOutput>E:\NUBE 2018\ERP SIANI\Output\</DCC_ObjOutput>
+        <DCC_HppOutput>D:\ERP_SIANI\Output\</DCC_HppOutput>
+        <DCC_BplOutput>Output\Packages</DCC_BplOutput>
+        <DCC_DcpOutput>Output\DCP</DCC_DcpOutput>
+        <DCC_UnitSearchPath>PFE\;PFE\xml\Addendas\;PFE\xml\GeneradorCBB\;PFE\xml\GeneradorSello\;PFE\xml\PAC\;PFE\xml\PAC\Fem\;PFE\xml\PAC\FO\;PFE\xml\xslt_32\;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_ResourcePath>PFE\;PFE\xml\Addendas\;PFE\xml\GeneradorCBB\;PFE\xml\GeneradorSello\;PFE\xml\PAC\;PFE\xml\PAC\Fem\;PFE\xml\PAC\FO\;PFE\xml\xslt_32\;$(DCC_ResourcePath)</DCC_ResourcePath>
+        <DCC_ObjPath>PFE\;PFE\xml\Addendas\;PFE\xml\GeneradorCBB\;PFE\xml\GeneradorSello\;PFE\xml\PAC\;PFE\xml\PAC\Fem\;PFE\xml\PAC\FO\;PFE\xml\xslt_32\;$(DCC_ObjPath)</DCC_ObjPath>
+        <DCC_IncludePath>PFE\;PFE\xml\Addendas\;PFE\xml\GeneradorCBB\;PFE\xml\GeneradorSello\;PFE\xml\PAC\;PFE\xml\PAC\Fem\;PFE\xml\PAC\FO\;PFE\xml\xslt_32\;$(DCC_IncludePath)</DCC_IncludePath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_iOSDevice64)'!=''">
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_MajorVer>1</VerInfo_MajorVer>
+        <VerInfo_Build>0</VerInfo_Build>
+        <VerInfo_MinorVer>0</VerInfo_MinorVer>
+        <VerInfo_Release>0</VerInfo_Release>
+        <DCC_HppOutput>Output\</DCC_HppOutput>
+        <DCC_ObjOutput>Output\</DCC_ObjOutput>
+        <DCC_DcuOutput>Output\</DCC_DcuOutput>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <AppEnableHighDPI>true</AppEnableHighDPI>
+    </PropertyGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Parameters>
+                    <Parameters Name="UseLauncher">False</Parameters>
+                    <Parameters Name="LoadAllSymbols">True</Parameters>
+                    <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+                    <Parameters Name="DebugSourceDirs">C:\componente2007\ZeosDB\ZEOSDBO-6.6.2-rc\src\dbc\;C:\componente2007\ZeosDB\ZEOSDBO-6.6.2-rc\src\component\</Parameters>
+                </Parameters>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">2017</VersionInfo>
+                    <VersionInfo Name="MinorVer">10</VersionInfo>
+                    <VersionInfo Name="Release">10</VersionInfo>
+                    <VersionInfo Name="Build">17</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">2058</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName">DSAI S.A DE C.V.</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileDescription">SISTEMA DE ADMINISTRACION DE PROYECTOS</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">2017.10.10.17</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName">DSAI</VersionInfoKeys>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename">Noil Empresarial</VersionInfoKeys>
+                    <VersionInfoKeys Name="ProductName">Noíl</VersionInfoKeys>
+                    <VersionInfoKeys Name="ProductVersion">1.1</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments">Actualiacion de Nominas, Contabilidad y RH</VersionInfoKeys>
+                </VersionInfoKeys>
+                <Source>
+                    <Source Name="MainSource">Noil_SSI_18.dpr</Source>
+                </Source>
+                <TypeLibOptions>
+                    <TypeLibOptions Name="AutoRegisterTLB">False</TypeLibOptions>
+                    <TypeLibOptions Name="AutoGenImportAssembly">False</TypeLibOptions>
+                </TypeLibOptions>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclDataSnapNativeServer240.bpl">Embarcadero DBExpress DataSnap Native Server Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dclcxPivotGridOLAPRS24.bpl">ExpressPivotGrid OLAP by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k240.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dclcxSchedulerTreeBrowserRS24.bpl">ExpressScheduler tree browser by Developer Express Inc.</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\tmsdedXE10.bpl">TMS Component Pack design time support</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <ModelSupport>False</ModelSupport>
+            <ActiveXProjectInfo>
+                <version>1</version>
+            </ActiveXProjectInfo>
+            <Platforms>
+                <Platform value="iOSDevice64">True</Platform>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+            <Deployment Version="3">
+                <DeployFile LocalName="Salida\Noil_SSI_18.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>Noil_SSI_18.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList"/>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements"/>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList"/>
+                <DeployClass Name="ProjectOSXEntitlements"/>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+            </Deployment>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="frm_connection.pas">
+            <Form>connection</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="global.pas"/>
+        <DCCReference Include="frm_setup.pas">
+            <Form>frmSetup</Form>
+        </DCCReference>
+        <DCCReference Include="frm_barra.pas">
+            <Form>frmBarra</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Utilerias.pas"/>
+        <DCCReference Include="frm_gruposxprograma.pas">
+            <Form>frmGruposxPrograma</Form>
+        </DCCReference>
+        <DCCReference Include="frm_GruposUsuarios.pas">
+            <Form>frmGrupos</Form>
+        </DCCReference>
+        <DCCReference Include="frm_activos.pas">
+            <Form>frmActivos</Form>
+        </DCCReference>
+        <DCCReference Include="frm_importaciondedatos.pas">
+            <Form>frmImportaciondeDatos</Form>
+        </DCCReference>
+        <DCCReference Include="frm_programas.pas">
+            <Form>frmProgramas</Form>
+        </DCCReference>
+        <DCCReference Include="frm_Kardex.pas">
+            <Form>frmKardex</Form>
+        </DCCReference>
+        <DCCReference Include="frm_acceso.pas">
+            <Form>frmacceso</Form>
+        </DCCReference>
+        <DCCReference Include="frm_firmantes.pas">
+            <Form>frmFirmas</Form>
+        </DCCReference>
+        <DCCReference Include="frm_usuarios.pas">
+            <Form>frmUsuarios</Form>
+        </DCCReference>
+        <DCCReference Include="frm_residencias.pas">
+            <Form>frmResidencias</Form>
+        </DCCReference>
+        <DCCReference Include="frm_seleccion2.pas">
+            <Form>frmSeleccion2</Form>
+        </DCCReference>
+        <DCCReference Include="noil_TLB.pas"/>
+        <DCCReference Include="frm_contratos.pas">
+            <Form>frmContratos</Form>
+        </DCCReference>
+        <DCCReference Include="StoHtmlHelp.pas"/>
+        <DCCReference Include="frm_Modulosxusuario.pas">
+            <Form>frmModulosxUsuario</Form>
+        </DCCReference>
+        <DCCReference Include="frm_tiposdeMovimiento.pas">
+            <Form>frmTiposdeMovimiento</Form>
+        </DCCReference>
+        <DCCReference Include="frm_ordenes.pas">
+            <Form>frmOrdenes</Form>
+        </DCCReference>
+        <DCCReference Include="Unit_Barras.pas"/>
+        <DCCReference Include="UnitExcel.pas"/>
+        <DCCReference Include="UTChartMarco.pas"/>
+        <DCCReference Include="UTChartMouse.pas"/>
+        <DCCReference Include="frm_configuraMail_mensajes.pas">
+            <Form>frmConfiguraMail_mensajes</Form>
+        </DCCReference>
+        <DCCReference Include="masUtilerias.pas"/>
+        <DCCReference Include="UFunctionsGHH.pas"/>
+        <DCCReference Include="unitmanejofondo.pas"/>
+        <DCCReference Include="UnitValidaTexto.pas"/>
+        <DCCReference Include="unitActivaPop.pas"/>
+        <DCCReference Include="UnitGenerales.pas"/>
+        <DCCReference Include="UnitTablasImpactadas.pas"/>
+        <DCCReference Include="UnitTBotonesPermisos.pas">
+            <Form>,
+  FrmMovtoPersonalxoficio in &apos;FrmMovtoPersonalxoficio.pas&apos; {FrmMovtosPersonalxoficio</Form>
+        </DCCReference>
+        <DCCReference Include="frm_NuevoIdioma.pas">
+            <Form>frmNuevoIdioma</Form>
+        </DCCReference>
+        <DCCReference Include="frm_nuc_Organizacion.pas">
+            <Form>frm_nucOrganizacion</Form>
+        </DCCReference>
+        <DCCReference Include="AcroPDFLib_TLB.pas"/>
+        <DCCReference Include="frm_repositorio.pas">
+            <Form>frmrepositorio</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Func_Genericas.pas"/>
+        <DCCReference Include="Modulos\Operaciones\frm_Proyectos.pas">
+            <Form>frmProyectos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UnitMetodos.pas"/>
+        <DCCReference Include="UTFrmDepartamentos.pas">
+            <Form>FrmDepartamentos</Form>
+        </DCCReference>
+        <DCCReference Include="UFrmEnviarCorreo.pas">
+            <Form>FrmEnviarCorreo</Form>
+        </DCCReference>
+        <DCCReference Include="Frm_PopUpImportacionPP.pas">
+            <Form>FrmPopUpImportacionPP</Form>
+        </DCCReference>
+        <DCCReference Include="ExportaExcel.pas"/>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_Almacenes.pas">
+            <Form>frmAlmacenes</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_almacenesporcontrato.pas">
+            <Form>frmAlmacenesPorContrato</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_almacenesporusuario.pas">
+            <Form>frmAlmacenesPorUsuario</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_EntradaAlmacen.pas">
+            <Form>frmEntradaAlmacen</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_Pedidos.pas">
+            <Form>frmPedidos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_SalidaAlmacen.pas">
+            <Form>frmSalidaAlmacen</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_SetupAlm.pas">
+            <Form>frmSetupAlm</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_TipoMovto.pas">
+            <Form>frmMovtos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Presupuesto\frm_ActividadesAnexoPU.pas">
+            <Form>frmActividadesAnexoPU</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Presupuesto\frm_basicos.pas">
+            <Form>frmBasicos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Presupuesto\frm_equipos.pas">
+            <Form>frmEquipos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Presupuesto\frm_herramientas.pas">
+            <Form>frmHerramientas</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Presupuesto\frm_indirectos.pas">
+            <Form>frmIndirectos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Presupuesto\frm_personal.pas">
+            <Form>frmPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Renta Diaria\frm_admonCatalogos.pas">
+            <Form>frmAdmonCatalogos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Renta Diaria\frm_Cuentas.pas">
+            <Form>frmCuentas</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Renta Diaria\frm_embarcaciones.pas">
+            <Form>frmEmbarcaciones</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Renta Diaria\Frm_ImportaExportaActiv.pas">
+            <Form>FrmImportaExportaActiv</Form>
+        </DCCReference>
+        <DCCReference Include="frm_ReporteDiarioTurno.pas">
+            <Form>frmDiarioTurno</Form>
+        </DCCReference>
+        <DCCReference Include="frm_ReporteDiarioTurno2.pas">
+            <Form>frmDiarioTurno2</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Renta Diaria\unt_Actividades.pas"/>
+        <DCCReference Include="Modulos\Renta Diaria\UnitTarifa.pas"/>
+        <DCCReference Include="Modulos\Renta Diaria\frm_ReportePeriodo.pas">
+            <Form>frmReportePeriodo</Form>
+        </DCCReference>
+        <DCCReference Include="frm_usuarios_proyectos.pas">
+            <Form>frmUsuariosXproyectos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Renta Diaria\frm_centro_proceso.pas">
+            <Form>frmCentroProceso</Form>
+        </DCCReference>
+        <DCCReference Include="frm_plataformas.pas">
+            <Form>frmPlataformas</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_proveedores.pas">
+            <Form>frmProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="frm_Ciudades.pas">
+            <Form>frmCiudades</Form>
+        </DCCReference>
+        <DCCReference Include="frm_Paises.pas">
+            <Form>frmPaises</Form>
+        </DCCReference>
+        <DCCReference Include="frm_CatalogoAnexos.pas">
+            <Form>frmCatalogoAnexos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Renta Diaria\frm_ordenes_compra.pas">
+            <Form>frmOrdenes_Compra</Form>
+        </DCCReference>
+        <DCCReference Include="frm_Pernoctan.pas">
+            <Form>frmPernoctan</Form>
+        </DCCReference>
+        <DCCReference Include="frm_contratosxusuario.pas">
+            <Form>frmContratosxUsuario</Form>
+        </DCCReference>
+        <DCCReference Include="frm_Anexos.pas">
+            <Form>frmAnexos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="frm_barraH1.pas">
+            <Form>frmBarraH1</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frm_barraH2.pas">
+            <Form>frmBarraH2</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_catalogo_empleados_SSI.pas">
+            <Form>frmCatalogoEmpleadosSSI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="frm_Empresas.pas">
+            <Form>frm_Empresa</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="frm_deptos.pas">
+            <Form>frmDeptos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_tipos_nomina.pas">
+            <Form>frmTiposNomina</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_catalogos_almacen.pas">
+            <Form>frmCatalogosAlmacen</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_evaluacion.pas">
+            <Form>frmEvaluacion</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_diaslaboradosSIANI.pas">
+            <Form>frmDiasLaboradosSIANI</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_verificar.pas">
+            <Form>FrmVerificar</Form>
+        </DCCReference>
+        <DCCReference Include="Ufrm_Loading.pas">
+            <Form>frm_Loading</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\UnitRH.pas"/>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_materiales.pas">
+            <Form>frmMateriales</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_CatalogoNominas.pas">
+            <Form>FrmCatalogoNominas</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\Frm_Asignar_Guardias.pas">
+            <Form>FrmAsignarGuardias</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\Frm_CostoAlmacen.pas">
+            <Form>FrmCostoAlmacen</Form>
+        </DCCReference>
+        <DCCReference Include="Form_Esperando.pas">
+            <Form>FormEsperando</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\UFrmNotificaciones.pas">
+            <Form>FrmNotificaciones</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\Frm_Justificar.pas">
+            <Form>FrmJustificar</Form>
+        </DCCReference>
+        <DCCReference Include="2007-DebenuPDFLibrary\DebenuPDFLibraryAX0912_TLB.pas"/>
+        <DCCReference Include="frm_VerPDF.pas">
+            <Form>frmVerPDF</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\UFrm_EvaluaProveedor.pas">
+            <Form>Frm_EvaluaProveedor</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\Frm_RequisicionMaterial.pas">
+            <Form>FrmRequisicionMaterial</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_Catalogos_rh_tipos.pas">
+            <Form>frmCatalogosRHTipos</Form>
+        </DCCReference>
+        <DCCReference Include="UnitReportes.pas"/>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_SeguroVida.pas">
+            <Form>FrmSeguroVida</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_reportesRH.pas">
+            <Form>frmReportesRH</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="frm_Noil_SSI.pas">
+            <Form>frmNoil_SSI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_EvaluaCompetencias.pas">
+            <Form>frm_EvaluaCompetencias</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Mantenimiento\frm_Mantenimiento.pas">
+            <Form>frmMantenimiento</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Mantenimiento\frm_RegistroMantenimiento.pas">
+            <Form>frmRegistroMantenimiento</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_empleadosDocumentos.pas">
+            <Form>frm_empleadosDocumentos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_salarios.pas">
+            <Form>frmSalarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_pagoProveedores.pas">
+            <Form>frmpagoProveedores</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_SatisfaccionCliente.pas">
+            <Form>frm_SatisfaccionCliente</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\Frm_PreNomina.pas">
+            <Form>FrmPreNomina</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Mantenimiento\frm_ProgramaMantenimiento.pas">
+            <Form>FrmProgramaMantenimiento</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_diaslaborados.pas">
+            <Form>frmDiasLaborados</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Mantenimiento\frm_Reportecheck.pas">
+            <Form>frmReporteCheck</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_personal_prov.pas">
+            <Form>frmPersonalProv</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_guardias.pas">
+            <Form>FrmGuardias</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\Frm_Nomina.pas">
+            <Form>FrmNomina</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_CentroCosto.pas">
+            <Form>FrmCentroCosto</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_controlComisiones.pas">
+            <Form>frmControlComision</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_SeguimientoReq.pas">
+            <Form>frmSeguimientoReq</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_clientes_oc.pas">
+            <Form>frmClientesOC</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_bajar_masivo.pas">
+            <Form>frmBajarMasivo</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_agregar_masivo.pas">
+            <Form>frmAgregarMasivo</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_contratar_masivo.pas">
+            <Form>frmContratarMasivo</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Frm_FechaVigencia.pas">
+            <Form>FrmFechaVigencia</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_rangoSalarios.pas">
+            <Form>frmRangoSalarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\Frm_ConfGuardias.pas">
+            <Form>FrmConfGuardias</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_Documentos_Reportes.pas">
+            <Form>FrmDocumentos_Reportes</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_ReporteControl.pas">
+            <Form>FrmReporteControl</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_comentarios_nomina.pas">
+            <Form>frmComentariosNomina</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\frm_agregar_masivoOP.pas">
+            <Form>frmAgregarMasivoOP</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\frm_catalogos_Operaciones.pas">
+            <Form>frmCatalogosOperacion</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\Frm_CostoPresupuesto.pas">
+            <Form>frmCostoPresupuesto</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\Frm_ResumenPresupuesto.pas">
+            <Form>FrmResumenPresupuesto</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_asistencias.pas">
+            <Form>frmAsistencias</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\Frm_Asignacion.pas">
+            <Form>FrmAsignacion</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\frm_adicional_pres.pas">
+            <Form>frmAdicionalesPres</Form>
+        </DCCReference>
+        <DCCReference Include="frm_registro_actividades.pas">
+            <Form>frmRegistroAct</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_rptEvaluaProv.pas">
+            <Form>frmRptEvaluacionProv</Form>
+        </DCCReference>
+        <DCCReference Include="UfrmBuscaCorreo.pas">
+            <Form>FrmBuscaCorreo</Form>
+        </DCCReference>
+        <DCCReference Include="frm_valida.pas">
+            <Form>frmValida</Form>
+        </DCCReference>
+        <DCCReference Include="frm_ActividadesGeneral.pas">
+            <Form>frmActGeneral</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\Frm_CotizacionP.pas">
+            <Form>FrmCotizacionesP</Form>
+        </DCCReference>
+        <DCCReference Include="Frm_Embarcacion.pas">
+            <Form>FrmEmbarcacion</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_clientes.pas">
+            <Form>frmClientes</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\frm_Presupuesto.pas">
+            <Form>frmPresupuesto</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_EstatusEquipos.pas">
+            <Form>frmEstatusEquipos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\frm_programaPresupuesto.pas">
+            <Form>frmProgramPres</Form>
+        </DCCReference>
+        <DCCReference Include="frm_turnos.pas">
+            <Form>frmTurnos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_AprobacionPagos.pas">
+            <Form>frmAprobacionP</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_cotizacionCMMI.pas">
+            <Form>frmCotizacionCMMI</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_requisicion_ss7.pas">
+            <Form>FrmRequisicionss7</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_agregar_Requisicion.pas">
+            <Form>frmAgregarMasivoRequisicion</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\Frm_RequerimientosControlCalidad.pas">
+            <Form>FrmRequerimientosControlCalidad</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_ApruebaRequisiciones.pas">
+            <Form>frmApruebaRequisiciones</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_TipoMaterial.pas">
+            <Form>frmTipoMaterial</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_CargaMaterial.pas">
+            <Form>frmCargaMaterial</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_GridFM.pas">
+            <Form>frmGridFM</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\UFrmIndicadores.pas">
+            <Form>FrmIndicadores</Form>
+        </DCCReference>
+        <DCCReference Include="UFrmCopiarPartidas.pas">
+            <Form>FrmCopiarPartidas</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_bancos.pas">
+            <Form>frmBancos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\Frm_BancosMovimientos.pas">
+            <Form>frmBancosMovimientos</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_ProyeccionCXC.pas">
+            <Form>frmProyeccionCXC</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Presupuesto\frm_Buscar.pas">
+            <Form>frmBuscar</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_almacenamiento.pas">
+            <Form>frmAlmacenamiento</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_Existencia.pas">
+            <Form>frmExistencia</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="frm_abrereporte.pas">
+            <Form>frmAbreReporte</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_InspeccionMateriales.pas">
+            <Form>FrmInspeccionMateriales</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_agregar_OrdenCompra.pas">
+            <Form>frmAgregarMasivoOrdenCompra</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_AvisoEmbarque.pas">
+            <Form>frmAvisoEmbarque</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\Frm_SolicitudMaterial.pas">
+            <Form>FrmSolicitudMaterial</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_VisualizaComprobanteFD.pas">
+            <Form>frmVisualizaComprobanteFD</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_SolicitudDeMateriales.pas">
+            <Form>frmSolicitudDeMateriales</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_Pedidos_SAP_Estatus.pas"/>
+        <DCCReference Include="Modulos\Flujo Materiales\UFrm_EvaluaProveedorCMMI.pas">
+            <Form>Frm_EvaluaProveedorCMMI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_VerDetalle_MR.pas">
+            <Form>frmVerDetalleMR</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_EntradaAlmacen_SSI.pas">
+            <Form>frmEntradaAlmacen_SSI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_SalidaAlmacen_SSI.pas">
+            <Form>frmSalidaAlmacen_SSI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Frm_Modal.pas">
+            <Form>FrmModal</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_materiales_CMMI.pas">
+            <Form>frmMateriales_CMMI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_servicios_CMMI.pas">
+            <Form>frmServicios_CMMI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_CuentasPorPagar.pas">
+            <Form>frmCuentasPorPagar</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_RevisionesRequisicion.pas">
+            <Form>FrmRevisionesRequisiciones</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_agregar_servicios.pas">
+            <Form>frmAgregarMasivoServicios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_agregar_Accesorios.pas">
+            <Form>frmAgregarMasivoAccesorios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Gerencia Administrativa\frm_ComprobantesFiscalesD.pas">
+            <Form>frmComprobantesFiscalesD</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_Pedidos_SAP.pas">
+            <Form>frmPedidos_SAP</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\frm_agregar_masivoOP_SS7.pas">
+            <Form>frmAgregarMasivoOP_SS7</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_EntradaAlmacen_SS7.pas">
+            <Form>frmEntradaAlmacen_SS7</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_SalidaAlmacen_SS7.pas">
+            <Form>frmSalidaAlmacen_SS7</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Control EPP\frm_EntregaEquipo.pas">
+            <Form>frmEntregaEquipo</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Control EPP\frm_DevolucionEquipo.pas">
+            <Form>frmDevolucionEquipo</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_catalogo_empleados.pas">
+            <Form>frmCatalogoEmpleados</Form>
+        </DCCReference>
+        <DCCReference Include="Modulos\Operaciones\frm_agregar_masivoOP_SSI.pas">
+            <Form>frmAgregarMasivoOP_SSI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\frm_agregar_personal.pas">
+            <Form>frmAgregarPersonal</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Recursos Humanos\FrmAsistenciaMedica.pas">
+            <Form>FrmAsistenciaMed</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_materiales_SS7.pas">
+            <Form>frmMateriales_SS7</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="frm_Empresas_SSI.pas">
+            <Form>frm_Empresa_SSI</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Control EPP\frm_listado_personal.pas">
+            <Form>frmListadoPersonal</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Modulos\Flujo Materiales\frm_SolicitudDetalle.pas">
+            <Form>frmSolicitudDetalle</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

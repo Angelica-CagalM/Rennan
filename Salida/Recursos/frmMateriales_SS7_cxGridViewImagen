@@ -1,0 +1,34 @@
+﻿[Main]
+Version=2
+
+[frmMateriales_SS7.cxGridViewImagen: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmMateriales_SS7.cxGridViewImagen/cxGridViewImagenColumn1: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=392
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridViewImagen/cxGridViewImagenColumn2: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=86
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

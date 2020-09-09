@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="3577" PreviewOptions.MDIChild="True" PreviewOptions.Modal="False" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41904.4296008102" ReportOptions.Description.Text="" ReportOptions.LastChange="43441.8861959144" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure GroupFooter4OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo27OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo46OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo47OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo48OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo51OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." OnReportPrint="no ">
+  <Datasets>
+    <item DataSet="connection.rpt_contrato" DataSetName="contrato"/>
+    <item DataSet="frxPag" DataSetName="frxPag"/>
+    <item DataSet="connection.rpt_setup" DataSetName="setup"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="134.17313803" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxPictureView Name="Picture1" Left="1.89765" Top="0" Width="174.45819293" Height="75.59055118" Center="True" DataField="bImagen" DataSet="connection.rpt_contrato" DataSetName="contrato" Frame.Style="fsDouble" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="Memo1" Left="207.5518645" Top="0" Width="302.6846855" Height="75.59055118" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Style="fsDouble" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Sucursal&#13;&#10;[setup.&#34;sDireccion1&#34;]&#13;&#10;[setup.&#34;sDireccion2&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="0" Top="83.1496063" Width="739.00835" Height="26.6598787" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" GapX="4" GapY="4" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Pagos por Proveedor"/>
+      <TfrxMemoView Name="Memo54" Left="529.35467" Top="0" Width="208.1964355" Height="75.5905511811024" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Style="fsDouble" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="&#13;&#10;&#13;&#10;&#13;&#10;[setup.&#34;sTelefono&#34;]&#13;&#10;[setup.&#34;sEmail&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo15" ShiftMode="smWhenOverlapped" Left="0" Top="109.60637" Width="738.8976378" Height="17.00787402" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="15000804" ParentFont="False" VAlign="vaCenter" Text=" Periodo:  Del [Fecha_I] al [Fecha_F]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxPageHeader>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15.11810535" Left="0" Top="238.11039" Width="740.409927" Condition="frxPag.&#34;IdProveedor&#34;">
+      <TfrxMemoView Name="Memo11" Left="0" Top="0" Width="279.61325291" Height="15.11810535" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="15000804" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Proveedor"/>
+      <TfrxMemoView Name="Memo12" Left="376.062992125984" Top="0" Width="116.409448818898" Height="15.11810535" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="15000804" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="O.C."/>
+      <TfrxMemoView Name="Memo16" Left="638.740157480315" Top="0" Width="101.29133858" Height="15.11810535" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="15000804" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Importe"/>
+      <TfrxMemoView Name="Memo21" Left="492.33862417" Top="0" Width="146.26771654" Height="15.11810535" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="15000804" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Proyecto"/>
+      <TfrxMemoView Name="Memo5" Left="279.307086614173" Top="0" Width="96.37796008" Height="15.11810535" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="15000804" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Fecha"/>
+    </TfrxGroupHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="17.00787157" Left="0" Top="275.90569" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="frxPag" DataSetName="frxPag" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo9" ShiftMode="smWhenOverlapped" Left="0" Top="0" Width="279.68503205" Height="17.00787402" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" ParentFont="False" VAlign="vaCenter" Text="[frxPag.&#34;TituloProveedor&#34;]"/>
+      <TfrxMemoView Name="Memo3" ShiftMode="smWhenOverlapped" Left="376.06299213" Top="0" Width="116.40944882" Height="17.00787402" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxPag.&#34;Codigo&#34;]"/>
+      <TfrxMemoView Name="Memo6" ShiftMode="smWhenOverlapped" Left="279.30708661" Top="0" Width="96.37796008" Height="17.00787402" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxPag.&#34;dIdFecha&#34;]"/>
+      <TfrxMemoView Name="Memo7" ShiftMode="smWhenOverlapped" Left="638.74015748" Top="0" Width="101.29133858" Height="17.00787402" StretchMode="smMaxHeight" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" GapX="3" GapY="2" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="[frxPag.&#34;dMonto&#34;]"/>
+      <TfrxMemoView Name="Memo4" ShiftMode="smWhenOverlapped" Left="492.4878844" Top="0" Width="146.26771654" Height="17.00787402" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxPag.&#34;sIdFolio&#34;]"/>
+    </TfrxMasterData>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="0" Left="0" Top="404.40971" Width="740.409927"/>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="0" Left="0" Top="464.88219" Width="740.409927"/>
+    <TfrxGroupFooter Name="GroupFooter2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="317.48052" Width="740.409927">
+      <TfrxMemoView Name="Memo14" ShiftMode="smWhenOverlapped" Left="0" Top="0" Width="638.74015748" Height="15.11811024" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="Total "/>
+      <TfrxMemoView Name="Memo13" ShiftMode="smWhenOverlapped" Left="638.74015748" Top="0" Width="101.29133858" Height="15.11811024" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" GapX="3" GapY="2" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="[SUM(&#60;frxPag.&#34;dMonto&#34;&#62;,MasterData1)]"/>
+    </TfrxGroupFooter>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="0" Left="0" Top="215.43321" Width="740.409927" Condition="frxPag.&#34;sContrato&#34;"/>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18.89765" Left="0" Top="362.83488" Width="740.409927">
+      <TfrxMemoView Name="Memo8" ShiftMode="smWhenOverlapped" Left="638.74015748" Top="1" Width="101.29133858" Height="15.11811024" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" GapX="3" GapY="2" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="[SUM(&#60;frxPag.&#34;dMonto&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="Memo10" ShiftMode="smWhenOverlapped" Left="492.4878844" Top="1" Width="146.26771654" Height="15.11811024" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Total A Pagar"/>
+    </TfrxGroupFooter>
+  </TfrxReportPage>
+</TfrxReport>

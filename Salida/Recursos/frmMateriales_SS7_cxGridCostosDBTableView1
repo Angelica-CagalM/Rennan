@@ -1,0 +1,78 @@
+﻿[Main]
+Version=2
+
+[frmMateriales_SS7.cxGridCostosDBTableView1: TcxGridDBTableView]
+=
+Footer="False"
+GroupByBox="True"
+GroupFooters=0
+NewItemRow="False"
+EditFormUseDefaultLayout="True"
+Version=1
+
+[frmMateriales_SS7.cxGridCostosDBTableView1/colOrdenCompra: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=123
+AlignmentHorz=0
+Index=0
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridCostosDBTableView1/colCentroCosto: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=100
+AlignmentHorz=0
+Index=1
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridCostosDBTableView1/colProveedor: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=102
+AlignmentHorz=0
+Index=2
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridCostosDBTableView1/ColPrecio: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=146
+AlignmentHorz=1
+Index=3
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridCostosDBTableView1/ColFecha: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=101
+AlignmentHorz=1
+Index=4
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+
+[frmMateriales_SS7.cxGridCostosDBTableView1/ColMoneda: TcxGridDBColumn]
+=
+GroupIndex=-1
+Width=94
+AlignmentHorz=1
+Index=5
+Visible="True"
+SortOrder="soNone"
+SortIndex=-1
+WasVisibleBeforeGrouping="False"
+

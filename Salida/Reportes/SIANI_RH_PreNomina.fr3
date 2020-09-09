@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="38372.9388002315" ReportOptions.Description.Text="" ReportOptions.LastChange="43280.456239919" ScriptLanguage="PascalScript" ScriptText.Text="procedure ConcentradoEmpleadosOnBeforePrint(Sender: TfrxComponent);&#13;&#10;var&#13;&#10;   FecAux : tDateTime;&#13;&#10;   Resultado : boolean;&#13;&#10;   iDia, iLeft : double;&#13;&#10;   mes:String;&#13;&#10;   diasTotales : integer;&#13;&#10;begin&#13;&#10;&#13;&#10;   try&#13;&#10;     FecAux := StrToDate('29/02/'+copy(dateTostr(&#60;fecha_final&#62;),7,4));&#13;&#10;     Resultado := True;&#13;&#10;   except&#13;&#10;     Resultado := False;&#13;&#10;   end;&#13;&#10;&#13;&#10;    mes    := copy(dateTostr(&#60;fecha_final&#62;),4,2);&#13;&#10;&#13;&#10;    if (StrToInt(mes) =1) or (StrToInt(mes)=3) or (StrToInt(mes)=5) or (StrToInt(mes)=7) or (StrToInt(mes)=8) or (StrToInt(mes)=10) or (StrToInt(mes) = 12) then&#13;&#10;       diasTotales := 31;&#13;&#10;&#13;&#10;    if (StrToInt(mes)=2) then&#13;&#10;       diasTotales := 28;&#13;&#10;&#13;&#10;    if (StrToInt(mes)=2) and (Resultado =True) then&#13;&#10;       diasTotales := 29;&#13;&#10;&#13;&#10;    if (StrToInt(mes)=4) or (StrToInt(mes)=6) or (StrToInt(mes)=9) or (StrToInt(mes)=11) then&#13;&#10;       diasTotales := 30;&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;procedure Memo44OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;Begin&#13;&#10;&#13;&#10;End." OnReportPrint="no ">
+  <Datasets>
+    <item DataSet="connection.rpt_contrato" DataSetName="contrato"/>
+    <item DataSet="frmReportePeriodo.dsConfiguracion" DataSetName="dsConfiguracion"/>
+    <item DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio"/>
+  </Datasets>
+  <Styles>
+    <item Name="Title" Font.Charset="1" Font.Color="16777215" Font.Height="-16" Font.Name="Arial" Font.Style="1" Fill.BackColor="8388608"/>
+    <item Name="Header" Font.Charset="1" Font.Color="128" Font.Height="-13" Font.Name="Arial" Font.Style="1"/>
+    <item Name="Group header" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="15790320"/>
+    <item Name="Data" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0"/>
+    <item Name="Group footer" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1"/>
+    <item Name="Header line" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" Frame.Width="2"/>
+  </Styles>
+  <TfrxDataPage Name="Data" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Height="223" Left="613" Top="186" Width="336"/>
+  <TfrxReportPage Name="ConcentradoEmpleados" Orientation="poLandscape" PaperWidth="491.8" PaperHeight="279.4" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="8" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" OnBeforePrint="ConcentradoEmpleadosOnBeforePrint">
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="166.74551667" Left="0" Top="18.89765" Width="1783.182254" AllowSplit="True" Condition="dsConfiguracion.&#34;sContrato&#34;">
+      <TfrxMemoView Name="Memo2" Left="1.60111333" Top="89.7567804" Width="243.39466111" Height="69.36136889" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Trabajador"/>
+      <TfrxMemoView Name="Memo3" Left="244.99577444" Top="89.57480315" Width="224.05957556" Height="69.36136889" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Puesto"/>
+      <TfrxMemoView Name="Memo4" Left="469.05535" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN1&#34;][dsGeneradorFolio.&#34;FDiasN16&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="499.29159" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN2&#34;][dsGeneradorFolio.&#34;FDiasN17&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="529.52783" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN3&#34;][dsGeneradorFolio.&#34;FDiasN18&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="559.76407" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN4&#34;][dsGeneradorFolio.&#34;FDiasN19&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo8" Left="590.00031" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN5&#34;][dsGeneradorFolio.&#34;FDiasN20&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo9" Left="620.23655" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN6&#34;][dsGeneradorFolio.&#34;FDiasN21&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="650.47279" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN7&#34;][dsGeneradorFolio.&#34;FDiasN22&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="680.70903" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN8&#34;][dsGeneradorFolio.&#34;FDiasN23&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="710.94527" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN9&#34;][dsGeneradorFolio.&#34;FDiasN24&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="741.18151" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN10&#34;][dsGeneradorFolio.&#34;FDiasN25&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="771.41775" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN11&#34;][dsGeneradorFolio.&#34;FDiasN26&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="801.65399" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN12&#34;][dsGeneradorFolio.&#34;FDiasN27&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="831.89023" Top="140.28880667" Width="30.23624" Height="18.8976378" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN13&#34;][dsGeneradorFolio.&#34;FDiasN28&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="862.12647" Top="140.28880667" Width="30.23624" Height="18.89765" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN14&#34;][dsGeneradorFolio.&#34;FDiasN29&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="892.36271" Top="140.28880667" Width="30.23624" Height="18.89765" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN15&#34;][dsGeneradorFolio.&#34;FDiasN30&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="469.05535" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias1&#34;][dsGeneradorFolio.&#34;FDias16&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo20" Left="499.29159" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias2&#34;][dsGeneradorFolio.&#34;FDias17&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo21" Left="529.52783" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias3&#34;][dsGeneradorFolio.&#34;FDias18&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo22" Left="559.76407" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias4&#34;][dsGeneradorFolio.&#34;FDias19&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo23" Left="590.00031" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias5&#34;][dsGeneradorFolio.&#34;FDias20&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo24" Left="620.23655" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias6&#34;][dsGeneradorFolio.&#34;FDias21&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo25" Left="650.47279" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias7&#34;][dsGeneradorFolio.&#34;FDias22&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo26" Left="680.70903" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias8&#34;][dsGeneradorFolio.&#34;FDias23&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo27" Left="710.94527" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias9&#34;][dsGeneradorFolio.&#34;FDias24&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo28" Left="741.18151" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias10&#34;][dsGeneradorFolio.&#34;FDias25&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo29" Left="771.41775" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias11&#34;][dsGeneradorFolio.&#34;FDias26&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo30" Left="801.65399" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias12&#34;][dsGeneradorFolio.&#34;FDias27&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo31" Left="831.89023" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias13&#34;][dsGeneradorFolio.&#34;FDias28&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo32" Left="862.12647" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias14&#34;][dsGeneradorFolio.&#34;FDias29&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo33" Left="892.36271" Top="89.57480315" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias15&#34;][dsGeneradorFolio.&#34;FDias30&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo34" Left="952.59895" Top="89.57480315" Width="37.7953" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Días"/>
+      <TfrxMemoView Name="Memo35" Left="990.39425" Top="89.57480315" Width="77.480365" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Alta IMSS"/>
+      <TfrxMemoView Name="Memo36" Left="1067.874615" Top="89.57480315" Width="77.480365" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Baja IMSS"/>
+      <TfrxMemoView Name="Memo37" Left="1145.35498" Top="89.57480315" Width="62.64570975" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="SDI"/>
+      <TfrxMemoView Name="Memo38" Left="1208.00068975" Top="89.57480315" Width="73.9842997500001" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="SDR"/>
+      <TfrxMemoView Name="Memo39" Left="1281.9849895" Top="89.57480315" Width="73.72873404" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="S.Neto"/>
+      <TfrxMemoView Name="Memo40" Left="1355.71372354" Top="89.57480315" Width="59.23018323" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Bonos&#13;&#10;Comida /&#13;&#10;Pasajes"/>
+      <TfrxMemoView Name="Memo41" Left="1414.94390677" Top="89.57480315" Width="59.23018323" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Anticipos"/>
+      <TfrxMemoView Name="Memo42" Left="1538.64569126" Top="89.57480315" Width="60.47248" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.1" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="INFONAVIT"/>
+      <TfrxMemoView Name="Memo46" Left="1599.49607031" Top="89.57480315" Width="79.37013" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Total &#13;&#10;Descuentos"/>
+      <TfrxMemoView Name="Memo47" Left="1679.24409448819" Top="89.57480315" Width="102.04731" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Total &#13;&#10;Nomina"/>
+      <TfrxMemoView Name="Memo89" Left="10.89765" Top="26.83459197" Width="336.37817" Height="15.11811024" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Calibri" Font.Style="1" ParentFont="False" Text="[contrato.&#34;sCodigo&#34;]"/>
+      <TfrxMemoView Name="Memo43" Left="922.43217889" Top="140.22047244" Width="30.23624" Height="18.89765" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDiasN31&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo1" Left="922.43217889" Top="89.99123889" Width="30.23624" Height="51.02362205" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;FDias31&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo74" Left="11.33859" Top="45.35436" Width="336.37817" Height="30.23623024" Font.Charset="1" Font.Color="0" Font.Height="-24" Font.Name="Calibri" Font.Style="1" ParentFont="False" Text="PRE- NÓMINA"/>
+      <TfrxMemoView Name="Memo78" Left="1474.0167" Top="89.57480315" Width="64.2519685" Height="69.54330709" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.1" Fill.BackColor="10965258" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Descuentos"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="20.46371889" Left="0" Top="294.80334" Width="1783.182254">
+      <TfrxMemoView Name="Memo53" Left="1679.24409449" Top="0" Width="102.04731" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="4" Fill.BackColor="16700346" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;TotalNomina&#34;&#62;,MasterData2)]"/>
+      <TfrxMemoView Name="Memo77" Left="0" Top="0" Width="1353.07174" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Fill.BackColor="16700346" ParentFont="False" Text="Total por Proyecto"/>
+      <TfrxMemoView Name="Memo82" Left="1353.07174" Top="0" Width="63.00971323" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Frame.Width="0.5" Fill.BackColor="16700346" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;Bonos&#34;&#62;,MasterData2)]"/>
+      <TfrxMemoView Name="Memo83" Left="1415.05511811" Top="0" Width="59.23018323" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Frame.Width="0.5" Fill.BackColor="16700346" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;Anticipos&#34;&#62;,MasterData2)]"/>
+      <TfrxMemoView Name="Memo84" Left="1474.0167" Top="0" Width="64.2519685" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Frame.Width="0.5" Fill.BackColor="16700346" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;Descuento&#34;&#62;,MasterData2)]"/>
+      <TfrxMemoView Name="Memo85" Left="1538.64566929" Top="0" Width="60.47248" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Frame.Width="0.5" Fill.BackColor="16700346" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;TotalInf&#34;&#62;,MasterData2)]"/>
+      <TfrxMemoView Name="Memo86" Left="1599.49606299" Top="0" Width="79.37013" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Frame.Width="0.5" Fill.BackColor="16700346" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;TotalDeduciones&#34;&#62;,MasterData2)]"/>
+    </TfrxGroupFooter>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18.89765" Left="0" Top="253.22851" Width="1783.182254" OnBeforePrint="MasterData2OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" KeepHeader="True" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo48" Left="1.51181102" Top="0" Width="243.40155772" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" ParentFont="False" Text="[dsGeneradorFolio.&#34;Nombre&#34;]"/>
+      <TfrxMemoView Name="Memo49" Left="244.91336874" Top="0" Width="224.12598425" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" ParentFont="False" Text="[dsGeneradorFolio.&#34;Puesto&#34;]"/>
+      <TfrxMemoView Name="Memo50" Left="469.05535" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo50OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad1&#34;][dsGeneradorFolio.&#34;dCantidad16&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo51" Left="499.29159" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo51OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad2&#34;][dsGeneradorFolio.&#34;dCantidad17&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo52" Left="529.52783" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo52OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad3&#34;][dsGeneradorFolio.&#34;dCantidad18&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo54" Left="559.76407" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo54OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad4&#34;][dsGeneradorFolio.&#34;dCantidad19&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo55" Left="590.00031" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo55OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad5&#34;][dsGeneradorFolio.&#34;dCantidad20&#34;]"/>
+      <TfrxMemoView Name="Memo56" Left="620.23655" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo56OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad6&#34;][dsGeneradorFolio.&#34;dCantidad21&#34;]"/>
+      <TfrxMemoView Name="Memo57" Left="650.47279" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo57OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad7&#34;][dsGeneradorFolio.&#34;dCantidad22&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo58" Left="680.70903" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo58OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad8&#34;][dsGeneradorFolio.&#34;dCantidad23&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo59" Left="710.94527" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo59OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad9&#34;][dsGeneradorFolio.&#34;dCantidad24&#34;]"/>
+      <TfrxMemoView Name="Memo60" Left="741.18151" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo60OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad10&#34;][dsGeneradorFolio.&#34;dCantidad25&#34;]"/>
+      <TfrxMemoView Name="Memo61" Left="771.41775" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo61OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad11&#34;][dsGeneradorFolio.&#34;dCantidad26&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo62" Left="801.65399" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo62OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad12&#34;][dsGeneradorFolio.&#34;dCantidad27&#34;]"/>
+      <TfrxMemoView Name="Memo63" Left="831.89023" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo63OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad13&#34;][dsGeneradorFolio.&#34;dCantidad28&#34;]"/>
+      <TfrxMemoView Name="Memo64" Left="862.12647" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo64OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad14&#34;][dsGeneradorFolio.&#34;dCantidad29&#34;]"/>
+      <TfrxMemoView Name="Memo65" Left="892.36271" Top="0" Width="30.23624" Height="18.89765" OnBeforePrint="Memo65OnBeforePrint" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad15&#34;][dsGeneradorFolio.&#34;dCantidad30&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo66" Left="952.59895" Top="0" Width="37.7953" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dcantTotal&#34;]"/>
+      <TfrxMemoView Name="Memo67" Left="990.39425" Top="-5.6843418860808E-14" Width="77.480365" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" ParentFont="False" Text="[dsGeneradorFolio.&#34;Alta&#34;]"/>
+      <TfrxMemoView Name="Memo68" Left="1067.874615" Top="-5.6843418860808E-14" Width="77.480365" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" ParentFont="False" Text="[dsGeneradorFolio.&#34;Baja&#34;]"/>
+      <TfrxMemoView Name="Memo69" Left="1145.35498" Top="-5.6843418860808E-14" Width="62.64570975" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;SDI&#34;]"/>
+      <TfrxMemoView Name="Memo70" Left="1208.00068975" Top="-2.8421709430404E-14" Width="73.9842997500001" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;SDR&#34;]"/>
+      <TfrxMemoView Name="Memo71" Left="1281.9849895" Top="0" Width="73.72873404" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;SNeto&#34;]"/>
+      <TfrxMemoView Name="Memo72" Left="1355.71372354" Top="0" Width="59.23018323" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;Bonos&#34;]"/>
+      <TfrxMemoView Name="Memo73" Left="1414.94390677" Top="0" Width="59.23018323" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;Anticipos&#34;]"/>
+      <TfrxMemoView Name="Memo76" Left="1538.64569126" Top="0" Width="60.47248" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;TotalInf&#34;]"/>
+      <TfrxMemoView Name="Memo80" Left="1599.49607031" Top="0" Width="79.37013" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;TotalDeduciones&#34;]"/>
+      <TfrxMemoView Name="Memo81" Left="1679.24409449" Top="0" Width="102.04731" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;TotalNomina&#34;]"/>
+      <TfrxMemoView Name="Memo44" Left="922.43217889" Top="0" Width="30.23624" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[dsGeneradorFolio.&#34;dCantidad31&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo79" Left="1474.0167" Top="0" Width="64.251968503937" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" Text="[dsGeneradorFolio.&#34;Descuento&#34;]"/>
+    </TfrxMasterData>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="207.87415" Width="1783.182254" Condition="dsGeneradorFolio.&#34;Proyecto&#34;">
+      <TfrxMemoView Name="Memo45" Left="1.51181102" Top="0" Width="1780.15863" Height="22.67716535" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="14211288" ParentFont="False" VAlign="vaCenter" Text="[dsGeneradorFolio.&#34;Proyecto&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="336.37817" Width="1783.182254">
+      <TfrxMemoView Name="Memo75" Left="1679.24409449" Top="3.77953000000002" Width="102.04731" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="6" Fill.BackColor="12639424" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;TotalNomina&#34;&#62;,MasterData2,2)]"/>
+      <TfrxMemoView Name="Memo87" Left="0" Top="3.77953000000002" Width="1353.07174" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="4" Fill.BackColor="12639424" HAlign="haCenter" ParentFont="False" Text="TOTAL GLOBAL"/>
+      <TfrxMemoView Name="Memo88" Left="1353.07174" Top="3.77953000000002" Width="63.00971323" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="6" Frame.Width="0.5" Fill.BackColor="12639424" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;Bonos&#34;&#62;,MasterData2,2)]"/>
+      <TfrxMemoView Name="Memo90" Left="1415.05511811" Top="3.77953000000002" Width="59.23018323" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="6" Frame.Width="0.5" Fill.BackColor="12639424" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;Anticipos&#34;&#62;,MasterData2,2)]"/>
+      <TfrxMemoView Name="Memo91" Left="1474.0167" Top="3.77953000000002" Width="64.2519685" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="6" Frame.Width="0.5" Fill.BackColor="12639424" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;Descuento&#34;&#62;,MasterData2,2)]"/>
+      <TfrxMemoView Name="Memo92" Left="1538.64566929" Top="3.77953000000002" Width="60.47248" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="6" Frame.Width="0.5" Fill.BackColor="12639424" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;TotalInf&#34;&#62;,MasterData2,2)]"/>
+      <TfrxMemoView Name="Memo93" Left="1599.49606299" Top="3.77953000000002" Width="79.37013" Height="18.89765" DataSet="frmDiarioTurno2.dsGeneradorFolio" DataSetName="dsGeneradorFolio" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="6" Frame.Width="0.5" Fill.BackColor="12639424" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;dsGeneradorFolio.&#34;TotalDeduciones&#34;&#62;,MasterData2,2)]"/>
+    </TfrxGroupFooter>
+  </TfrxReportPage>
+</TfrxReport>

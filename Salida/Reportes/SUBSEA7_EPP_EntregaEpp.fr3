@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43816.5008446991" ReportOptions.Description.Text="" ReportOptions.LastChange="43847.4613519676" ScriptLanguage="PascalScript" ScriptText.Text="procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;  if &#60;frxDBDatasetEpp.&#34;Cantidad&#34;&#62; = -1 then&#13;&#10;        MemoCant.Text:='0';&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." OnReportPrint="no ">
+  <Datasets>
+    <item DataSet="connection.rpt_contrato" DataSetName="contrato"/>
+    <item DataSet="frxDBDatasetEpp" DataSetName="frxDBDatasetEpp"/>
+    <item DataSet="connection.rpt_setup" DataSetName="setup"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="83.14966" Left="0" Top="18.89765" Width="718.1107">
+      <TfrxPictureView Name="Picture1" Left="283.46475" Top="0" Width="181.41744" Height="52.91342" DataField="bImagen" DataSet="connection.rpt_setup" DataSetName="setup" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="Memo4" Left="185.19697" Top="41.57483" Width="389.29159" Height="30.23624" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="ENTREGA DE EQUIPO DE PROTECCION "/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18.89765" Left="0" Top="287.24428" Width="718.1107" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDatasetEpp" DataSetName="frxDBDatasetEpp" Filter="&#60;frxDBDatasetEpp.&#34;Cantidad&#34;&#62; &#60;&#62; 0" RowCount="0">
+      <TfrxMemoView Name="frxDBDatasetEppfrxDBDatasetEpp" Left="0" Top="0" Width="502.67749" Height="18.89765" DataSet="frxDBDatasetEpp" DataSetName="frxDBDatasetEpp" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[frxDBDatasetEpp.&#34;Material&#34;]"/>
+      <TfrxMemoView Name="MemoCant" Left="502.67749" Top="0" Width="75.5906" Height="18.89765" DataSet="frxDBDatasetEpp" DataSetName="frxDBDatasetEpp" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxDBDatasetEpp.&#34;Cantidad&#34;]"/>
+      <TfrxMemoView Name="MemoEpp" Left="578.26809" Top="0" Width="139.84261" Height="18.89765" DataSet="frxDBDatasetEpp" DataSetName="frxDBDatasetEpp" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxDBDatasetEpp.&#34;Fecha&#34;]"/>
+    </TfrxMasterData>
+    <TfrxColumnFooter Name="ColumnFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="34.01577" Left="0" Top="502.67749" Width="718.1107"/>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="26.45671" Left="0" Top="238.11039" Width="718.1107" Condition="frxDBDatasetEpp.&#34;IdPersonal&#34;">
+      <TfrxMemoView Name="Memo5" Left="0" Top="7.55905999999999" Width="718.1107" Height="18.89765" DataSet="frxDBDatasetPersonal" DataSetName="frxDBDatasetPersonal" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="-16777203" HAlign="haCenter" ParentFont="False" Text="SAP ID:[frxDBDatasetEpp.&#34;SAPID&#34;]    Personal: [frxDBDatasetEpp.&#34;Nombre&#34;]     No Botas: [frxDBDatasetEpp.&#34;NoBotas&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="328.81911" Width="718.1107"/>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="26.45671" Left="0" Top="188.9765" Width="718.1107" Condition="frxDBDatasetEpp.&#34;sEstado&#34;">
+      <TfrxMemoView Name="Memo1" Left="0" Top="3.77952999999999" Width="718.1107" Height="18.89765" DataSet="frxDBDatasetPersonal" DataSetName="frxDBDatasetPersonal" Font.Charset="1" Font.Color="16777215" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="128" HAlign="haCenter" ParentFont="False" Text="Estado de Entrega de EPP: [frxDBDatasetEpp.&#34;sEstado&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="374.17347" Width="718.1107"/>
+    <TfrxGroupHeader Name="GroupHeader3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41.57483" Left="0" Top="124.72449" Width="718.1107" Condition="frxDBDatasetEpp.&#34;OrdenTrabajo&#34;">
+      <TfrxMemoView Name="Memo2" Left="3.77953" Top="11.33859" Width="264.5671" Height="18.89765" DataSet="frxDBDatasetEpp" DataSetName="frxDBDatasetEpp" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxDBDatasetEpp.&#34;OrdenTrabajo&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="419.52783" Width="718.1107"/>
+  </TfrxReportPage>
+</TfrxReport>

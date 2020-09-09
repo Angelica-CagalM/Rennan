@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.6.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="3581" PreviewOptions.Zoom="1" PreviewOptions.ZoomMode="zmPageWidth" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="38372.9388002315" ReportOptions.Description.Text="" ReportOptions.LastChange="43262.4702129167" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." OnReportPrint="no ">
+  <Datasets>
+    <item DataSet="connection.rpt_contrato" DataSetName="contrato"/>
+    <item DataSetName="frxDatos"/>
+    <item DataSet="connection.rpt_setup" DataSetName="setup"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Financiero"/>
+    <item Name="EquipoTotalMN" Value="&#60;TotalEquipo&#62;*IIF(&#60;DBOrdenesdeTrabajo.&#34;lGeneraEquipo&#34;&#62; = 'Si',&#60;DBEquipos.&#34;dVentaMN&#34;&#62;,0)"/>
+    <item Name="EquipoTotalDLL" Value="&#60;TotalEquipo&#62;*IIF(&#60;DBOrdenesdeTrabajo.&#34;lGeneraEquipo&#34;&#62; = 'Si',&#60;DBEquipos.&#34;dVentaDLL&#34;&#62;,0)"/>
+    <item Name="PersonalTotalMN" Value="&#60;TotalPersonal&#62;*IIF(&#60;DBOrdenesdeTrabajo.&#34;lGeneraPersonal&#34;&#62; = 'Si',&#60;BDPersonal.&#34;dVentaMN&#34;&#62;,0)"/>
+    <item Name="PersonalTotalDLL" Value="&#60;TotalPersonal&#62;*IIF(&#60;DBOrdenesdeTrabajo.&#34;lGeneraPersonal&#34;&#62; = 'Si',&#60;BDPersonal.&#34;dVentaDLL&#34;&#62;,0)"/>
+    <item Name="ConsumiblesTotalMN" Value="&#60;TotalConsumuble&#62;*IIF(&#60;DBOrdenesdeTrabajo.&#34;lGeneraConsumibles&#34;&#62; = 'Si',&#60;DBComsumibles.&#34;dVentaMN&#34;&#62;,0)"/>
+    <item Name="ConsumiblesTotalDLL" Value="&#60;TotalConsumuble&#62;*IIF(&#60;DBOrdenesdeTrabajo.&#34;lGeneraConsumibles&#34;&#62; = 'Si',&#60;DBComsumibles.&#34;dVentaDLL&#34;&#62;,0)"/>
+    <item Name="TotalEquipo" Value="&#60;DBEquipos.&#34;dCantidad&#34;&#62;*&#60;DBEquipos.&#34;iJornada&#34;&#62;"/>
+    <item Name="TotalPersonal" Value="&#60;BDPersonal.&#34;dCantidad&#34;&#62;*&#60;BDPersonal.&#34;iJornada&#34;&#62;"/>
+    <item Name="TotalConsumuble" Value="&#60;DBComsumibles.&#34;dCantidad&#34;&#62;*&#60;DBComsumibles.&#34;iJornada&#34;&#62;"/>
+  </Variables>
+  <Styles>
+    <item Name="Title" Font.Charset="1" Font.Color="16777215" Font.Height="-16" Font.Name="Arial" Font.Style="1" Fill.BackColor="8388608"/>
+    <item Name="Header" Font.Charset="1" Font.Color="128" Font.Height="-13" Font.Name="Arial" Font.Style="1"/>
+    <item Name="Group header" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="15790320"/>
+    <item Name="Data" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0"/>
+    <item Name="Group footer" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1"/>
+    <item Name="Header line" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" Frame.Width="2"/>
+  </Styles>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Style="fsDot" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="120.94496" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxMemoView Name="Memo1" Left="2" Top="0.102350000000001" Width="736.00835" Height="83.14966" Frame.Typ="15" Text=""/>
+      <TfrxMemoView Name="Memo4" Left="157.29932" Top="3.10235" Width="579.04762" Height="51.91342" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="6160640" Font.Height="-24" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[setup.&#34;sNombre&#34;]"/>
+      <TfrxPictureView Name="Picture2" Left="6.89765" Top="3.10235" Width="143.84261" Height="67.81107" Center="True" DataField="bImagen" DataSet="connection.rpt_setup" DataSetName="setup" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="Memo46" Left="2" Top="83.2519563" Width="736.27613" Height="29.48030031" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="LISTADO STOCK MAXIMOS Y MINIMOS DE MATERIALES"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Height="15.11812" Left="0" ParentFont="False" Top="370.39394" Width="740.409927" AllowSplit="True" ColumnWidth="0" ColumnGap="0" DataSetName="frxDatos" KeepChild="True" KeepHeader="True" KeepTogether="True" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo21" Left="459.212598425197" Top="0" Width="45.35431719" Height="15.11811024" StretchMode="smMaxHeight" DataSetName="insumos" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxDatos.&#34;Medida&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="39.68503937" Top="0" Width="71.81099921" Height="15.11812" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" ParentFont="False" Text="[frxDatos.&#34;Codigo&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="111.49603858" Top="0" Width="347.716535430244" Height="15.11812" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" GapX="4" GapY="2" HAlign="haBlock" ParentFont="False" Text="[frxDatos.&#34;Material&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="557.48031496063" Top="0" Width="52.91338018" Height="15.11811024" StretchMode="smMaxHeight" DataSetName="insumos" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="[frxDatos.&#34;Minimo&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="504.566929133858" Top="0" Width="52.91338018" Height="15.11811024" StretchMode="smMaxHeight" DataSetName="insumos" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxDatos.&#34;Maximo&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="610.39370079" Top="0" Width="64.25201" Height="15.11811024" StretchMode="smMaxHeight" DataSetName="insumos" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="[frxDatos.&#34;dExistencia&#34;]">
+        <Highlights>
+          <item Font.Charset="1" Font.Color="255" Font.Height="-11" Font.Name="Arial" Font.Style="0" Condition="&#60;frxDatos.&#34;dExistencia&#34;&#62; &#60;= &#60;frxDatos.&#34;Minimo&#34;&#62;" FillType="ftBrush"/>
+          <item Font.Charset="1" Font.Color="16711680" Font.Height="-11" Font.Name="Arial" Font.Style="0" Condition="&#60;frxDatos.&#34;dExistencia&#34;&#62; &#62;= &#60;frxDatos.&#34;Maximo&#34;&#62;" FillType="ftBrush"/>
+        </Highlights>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo14" Left="1.88976378" Top="0" Width="37.7953" Height="15.11812" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haCenter" ParentFont="False" Text="[Line#]"/>
+      <TfrxMemoView Name="Memo23" Left="674.64566929" Top="0" Width="64.2519685" Height="15.11811024" StretchMode="smMaxHeight" DataSetName="insumos" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0.5" HAlign="haRight" Highlight.Font.Charset="1" Highlight.Font.Color="255" Highlight.Font.Height="-11" Highlight.Font.Name="Arial" Highlight.Font.Style="0" Highlight.Condition="&#60;frxDatos.&#34;dExistencia&#34;&#62; &#60; &#60;frxDatos.&#34;Minimo&#34;&#62;" Highlight.FillType="ftBrush" ParentFont="False" VAlign="vaCenter" Text="[IIF(&#60;frxDatos.&#34;dExistencia&#34;&#62; &#60; &#60;frxDatos.&#34;Minimo&#34;&#62;, (&#60;frxDatos.&#34;Minimo&#34;&#62; - &#60;frxDatos.&#34;dExistencia&#34;&#62;),0)]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22" Left="0" Top="502.67749" Width="740.409927">
+      <TfrxMemoView Name="Memo2" Left="483.77984" Top="9.33859" Width="257.00804" Height="11.33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Software ERP Noíl"/>
+      <TfrxMemoView Name="Memo3" Left="0" Top="7.55906" Width="275.90569" Height="14.44094" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[Setup.&#34;sWeb&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo16" Left="328.81911" Top="5.55906" Width="94.48825" Height="15.11812" Font.Charset="1" Font.Color="8421504" Font.Height="-12" Font.Name="Arial" Font.Style="3" HAlign="haRight" ParentFont="False" Text="Página [Page#] de [TotalPages#]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxPageFooter>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="11.33859" Left="0" Top="408.18924" Width="740.409927"/>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Height="22.63359306" Left="0" ParentFont="False" Top="325.03958" Width="740.409927" Condition="frxDatos.&#34;sContrato&#34;" ReprintOnNewPage="True">
+      <TfrxMemoView Name="Memo17" Left="111.49603858" Top="0" Width="347.71676" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="DESCRIPCION"/>
+      <TfrxMemoView Name="Memo18" Left="459.212598425197" Top="0" Width="45.35436" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="UNIDAD"/>
+      <TfrxMemoView Name="Memo19" Left="39.68503937" Top="0" Width="71.81107" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="CODIGO"/>
+      <TfrxMemoView Name="Memo20" Left="504.56692913" Top="0" Width="52.91338018" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="MÁXIMO"/>
+      <TfrxMemoView Name="Memo22" Left="557.48031496063" Top="0" Width="52.91338018" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="MÍNIMO"/>
+      <TfrxMemoView Name="Memo11" Left="610.393700787402" Top="0" Width="64.25201" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="EXISTENCIA"/>
+      <TfrxMemoView Name="Memo13" Left="1.88976378" Top="0" Width="37.7953" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="NO."/>
+      <TfrxMemoView Name="Memo24" Left="674.64566929" Top="0" Width="64.251968503937" Height="22.63359306" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="16777215" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="DIFERENCIA"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="0" Left="0" Top="442.20501" Width="740.409927"/>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18.89765" Left="0" Top="200.31509" Width="740.409927" Condition="frxDatos.&#34;IdAlmacen&#34;">
+      <TfrxMemoView Name="Memo12" Left="1.77953" Top="0" Width="737.76378197" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="13421772" ParentFont="False" VAlign="vaCenter" Text="ALMACEN :  [frxDatos.&#34;Almacen&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupHeader Name="GroupHeader3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18.89765" Left="0" Top="241.88992" Width="740.409927" Condition="frxDatos.&#34;IdFamilia&#34;">
+      <TfrxMemoView Name="Memo7" Left="1.77953" Top="0" Width="737.76378197" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="15000804" ParentFont="False" VAlign="vaCenter" Text="FAMILIA :  [frxDatos.&#34;Familia&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupHeader Name="GroupHeader4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18.89765" Left="0" Top="283.46475" Width="740.409927" Condition="frxDatos.&#34;IdSubFamilia&#34;">
+      <TfrxMemoView Name="Memo10" Left="1.77953" Top="0" Width="737.76378197" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0.5" Fill.BackColor="14211288" ParentFont="False" VAlign="vaCenter" Text="SUBFAMILIA :  [frxDatos.&#34;SubFamilia&#34;]"/>
+    </TfrxGroupHeader>
+  </TfrxReportPage>
+</TfrxReport>
